@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Social Experiment — Leaderboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- REQUIRED NETLIFY FORM -->
+<form name="xp-log" method="POST" data-netlify="true" hidden>
+  <input type="hidden" name="form-name" value="xp-log">
+  <input type="hidden" name="avatarId">
+  <input type="hidden" name="avatarName">
+  <input type="hidden" name="xp">
+  <input type="hidden" name="title">
+</form>
+
+<div class="page">
+  <div class="hero">
+    <img src="images/social-experiment-banner.png" alt="The Social Experiment">
+  </div>
+
+  <div class="container">
+    <h1>The Social Experiment</h1>
+    <p class="subtitle">Top Participants</p>
+
+    <div id="leaderboard" class="leaderboard">
+      <div class="loading">Waiting for data…</div>
+    </div>
+
+    <p class="footer">
+      Earn XP by being present and talking.<br>
+      No grinding. No clicks. Just show up.
+    </p>
+  </div>
+</div>
+
+<script src="leaderboard.js"></script>
+</body>
+</html>
